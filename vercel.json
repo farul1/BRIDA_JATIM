@@ -13,12 +13,10 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/index.php"
-    }
-  ],
+"routes": [
+  { "src": "/build/(.*)", "dest": "/public/build/$1" },
+  { "src": "/(.*)", "dest": "/public/index.php" }
+],
   "env": {
     "APP_NAME": "BRIDA",
     "APP_ENV": "production",
