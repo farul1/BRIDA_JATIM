@@ -25,11 +25,11 @@
     "APP_URL": "https://brida.jatimprov.go.id",
 
     "DB_CONNECTION": "mysql",
-    "DB_HOST": "127.0.0.1",
+    "DB_HOST": "mysql-xyz123.psdb.io",
     "DB_PORT": "3306",
     "DB_DATABASE": "brida_jatim_db4",
-    "DB_USERNAME": "root",
-    "DB_PASSWORD": "",
+    "DB_USERNAME": "brida_user",
+    "DB_PASSWORD": "SuperSecret123",
 
     "BROADCAST_DRIVER": "log",
     "CACHE_DRIVER": "file",
