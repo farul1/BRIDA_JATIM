@@ -1,18 +1,8 @@
 {
   "version": 3,
   "functions": {
-    "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    "public/index.php": { "runtime": "vercel-php@0.6.0" }
   },
-  "builds": [
-    {
-      "src": "public/index.php",
-      "use": "@vercel/php"
-    },
-    {
-      "src": "public/build/**/*",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/(.*)", "dest": "/public/index.php" }
@@ -73,10 +63,5 @@
     "VITE_PUSHER_PORT": "443",
     "VITE_PUSHER_SCHEME": "https",
     "VITE_PUSHER_APP_CLUSTER": "mt1"
-  },
-  "build": {
-    "env": {
-      "NODE_VERSION": "22"
-    }
   }
 }
