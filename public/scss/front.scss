@@ -1,0 +1,14 @@
+/*Atas for core*/
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "typography";
+ @import "library";
+
+/*Tengah*/
+@import "components";
+
+/*Bawah for animation*/
+@import "visibility";
+@import "scroll";
+@import "animation";

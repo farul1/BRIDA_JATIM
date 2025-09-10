@@ -1,0 +1,50 @@
+.row.afu-tab {
+    @include flex-column;
+
+    @include md {}
+
+    @include xl {
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    @include xxl {}
+
+    .nav.nav-pills {
+        @include flex-row;
+        margin-bottom: 20px;
+
+        @include md {}
+
+        @include xl {
+            flex-direction: column;
+            width: 24%;
+        }
+
+        @include xxl {}
+
+        .nav-link {
+            font-size: 13px;
+
+            @include md {}
+
+            @include xl {
+                font-size: 16px;
+            }
+
+            @include xxl {}
+        }
+    }
+
+    .tab-content {
+        padding: 0 10px;
+
+        @include md {}
+
+        @include xl {
+            width: 75%
+        }
+
+        @include xxl {}
+    }
+}

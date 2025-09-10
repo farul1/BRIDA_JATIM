@@ -1,0 +1,8 @@
+.application-section {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @include xl {
+        background-attachment: fixed !important;
+    }
+}

@@ -1,0 +1,288 @@
+.panel-heading  {
+    /*height: 10px !important;*/
+}
+
+/*START ON OFF LENGKAP*/
+.onoffswitch_active_lengkap {
+    position: relative; width: 161px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch_active_lengkap-checkbox {
+    display: none;
+}
+.onoffswitch_active_lengkap-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+}
+.onoffswitch_active_lengkap-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch_active_lengkap-inner:before, .onoffswitch_active_lengkap-inner:after {
+    display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch_active_lengkap-inner:before {
+    content: "LENGKAP";
+    padding-left: 10px;
+    background-color: #55EFC4; color: #FFFFFF;
+}
+.onoffswitch_active_lengkap-inner:after {
+    content: "TIDAK LENGKAP";
+    padding-right: 10px;
+    background-color: #FF7675; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch_active_lengkap-switch {
+    display: block; width: 7px; margin: 6.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 137px;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch_active_lengkap-checkbox:checked + .onoffswitch_active_lengkap-label .onoffswitch_active_lengkap-inner {
+    margin-left: 0;
+}
+.onoffswitch_active_lengkap-checkbox:checked + .onoffswitch_active_lengkap-label .onoffswitch_active_lengkap-switch {
+    right: 0px; 
+}
+/*END ON OFF LENGKAP*/
+
+/*START ON OFF PETA*/
+.onoffswitch_active_onoff {
+    position: relative; width: 62px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch_active_onoff-checkbox {
+    display: none;
+}
+.onoffswitch_active_onoff-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #DBDBDB; border-radius: 50px;
+}
+.onoffswitch_active_onoff-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch_active_onoff-inner:before, .onoffswitch_active_onoff-inner:after {
+    display: block; float: left; width: 50%; height: 13px; padding: 0; line-height: 13px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch_active_onoff-inner:before {
+    content: "ON";
+    padding-left: 11px;
+    background-color: #55EFC4; color: #FFFFFF;
+}
+.onoffswitch_active_onoff-inner:after {
+    content: "OFF";
+    padding-right: 11px;
+    background-color: #FF7675; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch_active_onoff-switch {
+    display: block; width: 17px; margin: -2px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 45px;
+    border: 2px solid #DBDBDB; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch_active_onoff-checkbox:checked + .onoffswitch_active_onoff-label .onoffswitch_active_onoff-inner {
+    margin-left: 0;
+}
+.onoffswitch_active_onoff-checkbox:checked + .onoffswitch_active_onoff-label .onoffswitch_active_onoff-switch {
+    right: 0px; 
+}
+/*END ON OFF PETA*/
+
+
+.onoffsetting {
+    position: relative; width: 67px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffsetting-checkbox {
+    display: none;
+}
+.onoffsetting-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 49px;
+}
+.onoffsetting-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffsetting-inner:before, .onoffsetting-inner:after {
+    display: block; float: left; width: 50%; height: 19px; padding: 0; line-height: 19px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffsetting-inner:before {
+    content: "ON";
+    padding-left: 13px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffsetting-inner:after {
+    content: "OFF";
+    padding-right: 13px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffsetting-switch {
+    display: block; width: 13px; margin: 3px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 44px;
+    border: 2px solid #999999; border-radius: 49px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffsetting-checkbox:checked + .onoffsetting-label .onoffsetting-inner {
+    margin-left: 0;
+}
+.onoffsetting-checkbox:checked + .onoffsetting-label .onoffsetting-switch {
+    right: 0px; 
+}
+
+
+.onoffswitch_active {
+    position: relative; width: 116px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch_active-checkbox {
+    display: none;
+}
+.onoffswitch_active-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #EAEAEA; border-radius: 50px;
+}
+.onoffswitch_active-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch_active-inner:before, .onoffswitch_active-inner:after {
+    display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch_active-inner:before {
+    content: "ACTIVE";
+    padding-left: 11px;
+    background-color: #4CAF50; color: #FFFFFF;
+}
+.onoffswitch_active-inner:after {
+    content: "NON ACTIVE ";
+    padding-right: 11px;
+    background-color: #F44336; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch_active-switch {
+    display: block; width: 13px; margin: 6px;
+    background: #FAFAFA;
+    position: absolute; top: 0; bottom: 0;
+    right: 87px;
+    border: 2px solid #EAEAEA; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch_active-checkbox:checked + .onoffswitch_active-label .onoffswitch_active-inner {
+    margin-left: 0;
+}
+.onoffswitch_active-checkbox:checked + .onoffswitch_active-label .onoffswitch_active-switch {
+    right: 0px; 
+} 
+
+
+.onoffkembalikan {
+    position: relative; width: 116px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffkembalikan-checkbox {
+    display: none;
+}
+.onoffkembalikan-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #EAEAEA; border-radius: 50px;
+}
+.onoffkembalikan-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffkembalikan-inner:before, .onoffkembalikan-inner:after {
+    display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffkembalikan-inner:before {
+    content: "KEMBALIKAN";
+    padding-left: 11px;
+    background-color: #F44336; color: #FFFFFF;
+}
+.onoffkembalikan-inner:after {
+    content: "Lanjutkan";
+    padding-right: 11px;
+    background-color: #4CAF50; color: #FFFFFF;
+    text-align: right;
+}
+.onoffkembalikan-switch {
+    display: block; width: 13px; margin: 6px;
+    background: #FAFAFA;
+    position: absolute; top: 0; bottom: 0;
+    right: 87px;
+    border: 2px solid #EAEAEA; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffkembalikan-checkbox:checked + .onoffkembalikan-label .onoffkembalikan-inner {
+    margin-left: 0;
+}
+.onoffkembalikan-checkbox:checked + .onoffkembalikan-label .onoffkembalikan-switch {
+    right: 0px; 
+}
+
+
+
+.onoffact {
+    position: relative; width: 76px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffact-checkbox {
+    display: none;
+}
+.onoffact-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #EAEAEA; border-radius: 50px;
+}
+.onoffact-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffact-inner:before, .onoffact-inner:after {
+    display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffact-inner:before {
+    content: "On";
+    padding-left: 11px;
+    background-color: #4CAF50; color: #FFFFFF;
+}
+.onoffact-inner:after {
+    content: "Off";
+    padding-right: 11px;
+    background-color: #F44336; color: #FFFFFF;
+    text-align: right;
+}
+.onoffact-switch {
+    display: block; width: 13px; margin: 6px;
+    background: #FAFAFA;
+    position: absolute; top: 0; bottom: 0;
+    right: 47px;
+    border: 2px solid #EAEAEA; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffact-checkbox:checked + .onoffact-label .onoffact-inner {
+    margin-left: 0;
+}
+.onoffact-checkbox:checked + .onoffact-label .onoffact-switch {
+    right: 0px; 
+} 

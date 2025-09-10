@@ -1,0 +1,57 @@
+.swal-text {
+    text-align: center;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.swal-content:last-child {
+    margin: 2em 0 4em;
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+.swal-button {
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 7px 19px;
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}
+
+.swal-button--cancel {
+    font-size: 13px !important;
+}
+
+.swal-button--confirm, .swal-button--edit {
+    background-color: #009D73;
+    font-size: 12px;
+    border: 1px solid #00815f;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px #00ae80;
+}
+
+
+.swal-button--confirm:focus, .swal-button--edit:focus, .swal-button--delete:focus {
+    opacity: 0.8;
+}
+
+
+.swal-button--confirm:active, .swal-button--edit:active {
+    background-color: #00815f;
+}
+
+.swal-button--delete {
+    background-color: #dc3545;
+    font-size: 12px;
+    border: 1px solid #bd2130;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px #ff3e50;
+}
+
+.swal-button--delete:active {
+    background-color: #bd2130;
+}

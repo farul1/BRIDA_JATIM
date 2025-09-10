@@ -1,0 +1,45 @@
+.onoffswitch_acc_member_event {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch_acc_member_event-checkbox {
+    display: none;
+}
+.onoffswitch_acc_member_event-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 10px;
+}
+.onoffswitch_acc_member_event-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch_acc_member_event-inner:before, .onoffswitch_acc_member_event-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch_acc_member_event-inner:before {
+    content: "Buka";
+    padding-left: 10px;
+    background-color: #55EFC4; color: #FFFFFF;
+}
+.onoffswitch_acc_member_event-inner:after {
+    content: "Tutup";
+    padding-right: 10px;
+    background-color: #FF7675; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch_acc_member_event-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 10px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch_acc_member_event-checkbox:checked + .onoffswitch_acc_member_event-label .onoffswitch_acc_member_event-inner {
+    margin-left: 0;
+}
+.onoffswitch_acc_member_event-checkbox:checked + .onoffswitch_acc_member_event-label .onoffswitch_acc_member_event-switch {
+    right: 0px; 
+}

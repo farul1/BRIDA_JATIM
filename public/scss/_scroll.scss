@@ -1,0 +1,234 @@
+//* Jangan lupa ditambahkan pada scene scrollmagic atau DOM
+$jarak:1em;
+
+.afu-fade {
+    opacity: 0;
+
+    &.animate {
+        opacity: 1;
+    }
+
+    &.up {
+        transform: translateY($jarak);
+
+        &.animate {
+            transform: translateY(0);
+        }
+
+        &.full {
+            transform: translateY(100%);
+
+            &.animate {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &.down {
+        transform: translateY(-$jarak);
+
+        &.animate {
+            transform: translateY(0);
+        }
+
+        &.full {
+            transform: translateY(-100%);
+
+            &.animate {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &.right {
+        transform: translatex(-$jarak);
+
+        &.animate {
+            transform: translatex(0);
+        }
+
+        &.full {
+            transform: translatex(-100%);
+
+            &.animate {
+                transform: translatex(0);
+            }
+
+            &.rotate.x {
+                transform: translatex(-100%) rotateX(90deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+
+            &.rotate.y {
+                transform: translatex(-100%) rotatey(90deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+
+            &.rotate.clockwise {
+                transform: translatex(-100%) rotate(360deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+
+            &.rotate.counter.clockwise {
+                transform: translatex(-100%) rotate(-360deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+        }
+
+        &.rotate.x {
+            transform: translatex(-$jarak) rotateX(90deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+
+        &.rotate.y {
+            transform: translatex(-$jarak) rotatey(90deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+
+        &.rotate.clockwise {
+            transform: translatex(-$jarak) rotate(360deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+
+        &.rotate.counter.clockwise {
+            transform: translatex(-$jarak) rotate(-360deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+    }
+
+    &.left {
+        transform: translatex($jarak);
+
+        &.animate {
+            transform: translatex(0);
+        }
+
+        &.full {
+            transform: translatex(100%);
+
+            &.animate {
+                transform: translatex(0);
+            }
+
+            &.rotate.x {
+                transform: translatex(100%) rotateX(90deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+
+            &.rotate.y {
+                transform: translatex(100%) rotatey(90deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+
+            &.rotate.clockwise {
+                transform: translatex(100%) rotate(360deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+
+            &.rotate.counter.clockwise {
+                transform: translatex(100%) rotate(-360deg);
+
+                &.animate {
+                    transform: translatex(0) rotate(0);
+                }
+            }
+        }
+
+        &.rotate.x {
+            transform: translatex($jarak) rotateX(90deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+
+        &.rotate.y {
+            transform: translatex($jarak) rotatey(90deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+
+        &.rotate.clockwise {
+            transform: translatex($jarak) rotate(360deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+
+        &.rotate.counter.clockwise {
+            transform: translatex($jarak) rotate(-360deg);
+
+            &.animate {
+                transform: translatex(0) rotate(0);
+            }
+        }
+    }
+
+    &.rotate.x {
+        transform: rotateX(90deg);
+
+        &.animate {
+            transform: rotate(0);
+        }
+    }
+
+    &.rotate.y {
+        transform: rotatey(90deg);
+
+        &.animate {
+            transform: rotate(0);
+        }
+    }
+
+    &.rotate.clockwise {
+        transform: rotate(360deg);
+
+        &.animate {
+            transform: rotate(0);
+        }
+    }
+
+    &.rotate.counter.clockwise {
+        transform: rotate(-360deg);
+
+        &.animate {
+            transform: rotate(0);
+        }
+    }
+}

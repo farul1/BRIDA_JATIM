@@ -1,0 +1,41 @@
+.afu-footer {
+    @include grid-col-min(1);
+
+    @include md {
+        @include grid-col-min(2)
+    }
+
+    @include xl {
+        @include grid-col-min(3)
+    }
+
+    @include xxl {}
+
+    .column {
+        @include flex-column;
+
+        .judul {
+            font-size: 18px;
+
+            @include md {
+                font-size: 20px;
+            }
+
+            @include xl {
+                font-size: 24px;
+            }
+
+            @include xxl {}
+        }
+
+        ul {
+            margin-left: 5%;
+        }
+
+        img.logo {
+            width: 75%;
+        }
+
+        form.rating {}
+    }
+}

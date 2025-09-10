@@ -1,0 +1,33 @@
+.news-header-section {
+    @include flex-row;
+    position: relative;
+
+    .background {
+        filter: brightness(0.5);
+        height: 35vh;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .overlay {
+        @include flex-row;
+        @include fullposition;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 5.555555555555556%;
+        position: absolute;
+
+        .judul {
+            color: color(white);
+
+            @include md {}
+
+            @include xl {
+                font-size: 2.75rem;
+                text-shadow: 2px 3px 5px #484141;
+            }
+
+            @include xxl {}
+        }
+    }
+}

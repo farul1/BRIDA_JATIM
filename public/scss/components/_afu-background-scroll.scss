@@ -1,0 +1,27 @@
+.afu-background-scroll {
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+
+    @include md {
+        background-size: contain !important;
+        background-position: bottom !important;
+    }
+
+    @include xl {
+        background-size: cover !important;
+    }
+
+    @include xxl {}
+
+    .item {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        padding: 10px;
+
+        @include xl {
+            padding: 20px;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.tab-section {
+    @include font1;
+    @include flex-column;
+    align-items: center;
+    // height: 1000px;
+    background-color: rgba(248, 249, 250, 1);
+    position: absolute;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    @include md {}
+
+    @include xl {
+        height: 100vh;
+        padding: 32px 0 0 0;
+    }
+
+    @include xxl {}
+
+    .field-button {
+        @include flex-row;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        width: 100%;
+
+        @include md {}
+
+        @include xl {}
+
+        @include xxl {}
+
+        .button {
+            color: color(text-dark);
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+            font-size: 12px;
+            font-weight: bold;
+            position: relative;
+            padding: 0 0 10px 0;
+            text-decoration: none;
+            text-align: center;
+            transition: $transition;
+            width: 35%;
+            z-index: 2;
+
+            @include md {
+                font-size: 18px;
+            }
+
+            @include xl {
+                border-bottom: 4px solid rgba(0, 0, 0, 0);
+                font-size: 20px;
+            }
+
+            @include xxl {
+                font-size: 24px;
+            }
+
+            &.active {
+                color: color(satu);
+                border-bottom: 2px solid color(satu);
+
+                @include xl {
+                    border-bottom: 4px solid color(satu);
+                }
+
+                &:nth-child(2n) {
+                    color: color(dua);
+                    border-bottom: 2px solid color(dua);
+
+                    @include xl {
+                        border-bottom: 4px solid color(dua);
+                    }
+                }
+            }
+        }
+    }
+
+    .field-isi {
+        position: relative;
+        z-index: 2;
+
+        .tab {
+            transition: $transition;
+
+            &.hilang {
+                opacity: 0;
+            }
+
+            &.hapus {
+                display: none;
+            }
+        }
+    }
+
+    .field-background {
+        @include fullposition;
+        position: absolute;
+        z-index: 1;
+
+        .gambar {
+            @include fullposition;
+            transition: $transition;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+}

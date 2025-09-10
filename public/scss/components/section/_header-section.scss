@@ -1,0 +1,27 @@
+.header-section {
+  // margin-top: 8vh;
+  position: relative;
+  @include xl {
+    // margin-top: 10vh;
+  }
+  .pembatas {
+    position: absolute;
+    bottom: -12.5vh;
+    height: 30%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+    @include md {
+      bottom: -6.259259259259259vh;
+      height:20%;
+    }
+    @include xl {
+      bottom: -12.5vh;
+      height: 25.25vh;
+      object-fit:fill;
+    }
+    @include xxl {
+      // bottom: -355px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.pelayanan-section {
+    @include flex-column;
+    background-color: #548ee2;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.15);
+    padding-top: 60px;
+    padding-bottom: 90px;
+    position: relative;
+
+    .judul {
+        align-self: center;
+        color: white;
+        font-size: 48px;
+        margin: 0;
+        text-align: center;
+        position: relative;
+        top: 25px;
+    }
+
+    .pernik {
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5)) hue-rotate(190deg);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(17deg);
+        width: 45%;
+
+        &2 {
+            filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5)) hue-rotate(190deg);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(210deg);
+            width: 37%;
+        }
+    }
+}

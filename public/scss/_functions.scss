@@ -1,0 +1,15 @@
+// Set Color function
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}
+
+// Set Text Color function
+@function set-text-color($color-name) {
+    @if (lightness($color-name) > 40) {
+        @return color(text-dark);
+    }
+
+    @else {
+        @return color(text-light);
+    }
+}

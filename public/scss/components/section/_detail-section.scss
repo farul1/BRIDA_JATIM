@@ -1,0 +1,77 @@
+.detail-section {
+    @include flex-column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+
+    @include md {}
+
+    @include xl {
+        align-items: center;
+        margin: 0 0 48px 0;
+        flex-direction: row;
+    }
+
+    @include xxl {}
+
+    .gambar {
+        width: 75%;
+        margin: 0 0 15px 0;
+
+        @include md {}
+
+        @include xl {
+            margin: 0;
+            width: 25%;
+
+        }
+
+        @include xxl {}
+    }
+
+    .field-teks {
+        width: 100%;
+        @include flex-column;
+
+        @include md {}
+
+        @include xl {
+            width: 65%;
+        }
+
+        @include xxl {}
+
+        .judul {
+            margin: 0 0 0.5em 0;
+
+            @include md {}
+
+            @include xl {}
+
+            @include xxl {}
+        }
+
+        .deskripsi {
+            text-align: justify;
+
+            @include md {}
+
+            @include xl {}
+
+            @include xxl {}
+        }
+
+        .button {
+            @include button;
+            align-self: center;
+
+            @include md {}
+
+            @include xl {
+                align-self: flex-start
+            }
+
+            @include xxl {}
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.background-absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20%;
+
+    @include md {
+        height: 30%;
+    }
+
+    @include xl {
+        height: auto;
+    }
+
+    @include xxl {}
+
+
+    .back {
+        height: 100%;
+        width: 100%;
+    }
+}

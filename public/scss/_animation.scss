@@ -1,0 +1,213 @@
+@keyframes line1animation {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  100% {
+    transform: rotate(-405deg) translate(-4px, 3px);
+  }
+}
+
+@keyframes line1animation2 {
+  0% {
+    transform: rotate(-405deg) translate(-4px, 3px);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+
+@keyframes line2animation {
+  0% {
+    transform: translate(0, 0) rotatey(0deg);
+  }
+
+  100% {
+    transform: translatex(100%) rotatey(90deg);
+  }
+}
+
+@keyframes line2animation2 {
+  0% {
+    transform: translatex(100%) rotatey(90deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotatey(0deg);
+  }
+}
+
+@keyframes line3animation {
+  0% {
+    width: 20px;
+  }
+
+  30% {
+    width: 0.3125em;
+    transform: rotate(20deg) translateX(50px);
+  }
+
+  100% {
+    width: 20px;
+    transform: translate(-1px, -9px) rotate(45deg);
+  }
+}
+
+@keyframes line3animation2 {
+  0% {
+    width: 20px;
+    transform: translate(-1px, -9px) rotate(45deg);
+  }
+
+  30% {
+    width: 0.3125em;
+    transform: rotate(20deg) translateX(50px);
+  }
+
+  100% {
+    width: 20px;
+  }
+}
+
+@keyframes lineshop1animation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, 4px) rotate(-45deg);
+  }
+}
+
+@keyframes lineshop1animation2 {
+  0% {
+    transform: translate(0px, 4px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes lineshop2animation {
+  0% {
+    transform: translate(0, 0) rotatey(0deg);
+  }
+
+  100% {
+    transform: translatex(100%) rotatey(90deg);
+  }
+}
+
+@keyframes lineshop2animation2 {
+  0% {
+    transform: translatex(100%) rotatey(90deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotatey(0deg);
+  }
+}
+
+@keyframes lineshop3animation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, -4px) rotate(45deg);
+  }
+}
+
+@keyframes lineshop3animation2 {
+  0% {
+    transform: translate(0px, -4px) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes lineshoppc1animation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, 12px) rotate(-45deg);
+  }
+}
+
+@keyframes lineshoppc1animation2 {
+  0% {
+    transform: translate(0px, 12px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes lineshoppc2animation {
+  0% {
+    transform: translate(0, 0) rotatey(0deg);
+  }
+
+  100% {
+    transform: translatex(100%) rotatey(90deg);
+  }
+}
+
+@keyframes lineshoppc2animation2 {
+  0% {
+    transform: translatex(100%) rotatey(90deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotatey(0deg);
+  }
+}
+
+@keyframes lineshoppc3animation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, -12px) rotate(45deg);
+  }
+}
+
+@keyframes lineshoppc3animation2 {
+  0% {
+    transform: translate(0px, -12px) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translatey(1em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

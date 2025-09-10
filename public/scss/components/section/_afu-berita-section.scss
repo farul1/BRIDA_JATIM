@@ -1,0 +1,39 @@
+.afu-berita-section {
+    @include flex-column;
+
+    h1 {
+        color: white;
+    }
+
+    .grid-berita {
+        @include grid-col-min(1, 0, 100%);
+        gap: 20px;
+        justify-content: space-between;
+        max-width: 100%;
+
+        @include md {
+            @include grid-col-min(2, 0, 48%);
+        }
+
+        @include xl {
+            @include grid-col-min(3, 0, 30%);
+            max-width: 75%;
+        }
+
+        @include xxl {}
+
+        .afu-item {
+            // width: 30%;
+        }
+    }
+
+
+
+    @include md {}
+
+    @include xl {
+        flex-direction: row;
+    }
+
+    @include xxl {}
+}

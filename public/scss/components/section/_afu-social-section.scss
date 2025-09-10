@@ -1,0 +1,84 @@
+.afu-social-section {
+    @include flex-column;
+    background-color: white;
+    // box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.15);
+    padding-top: 60px;
+    padding-bottom: 90px;
+    position: relative;
+
+    .judul {
+        align-self: center;
+        color: #FE7301;
+        font-size: 48px;
+        margin: 0;
+        text-align: center;
+        line-height: 1em;
+        margin-bottom: 40px;
+    }
+
+    .iframe-social {
+        margin-bottom: 20px;
+        min-height: 200px;
+        width: 100%;
+
+        @include md {
+            min-height: 300px;
+        }
+
+        @include xl {
+            height: inherit;
+            margin-bottom: 0;
+        }
+
+        @include xxl {}
+    }
+
+    .social-account {
+        @include flex-row;
+        align-items: center;
+        margin-bottom: 20px;
+        transition: $transition;
+        filter: drop-shadow(0 0 0 transparent);
+
+        &:hover {
+            transform: translate(-5px, -5px);
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        }
+
+        .icon {
+            border-radius: 50%;
+            margin-right: 15px;
+            width: 20%;
+        }
+
+        .name {
+            font-size: 18px;
+            margin: 0;
+        }
+    }
+
+    .grid {
+        @include grid-col-min(2);
+        gap: 10px;
+        height: auto !important;
+
+        @include md {
+            @include grid-col-min(3);
+        }
+
+        @include xl {}
+
+        @include xxl {}
+
+        .item {
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+            transition: $transition;
+
+            &:hover {
+                filter: brightness(1.3);
+            }
+        }
+    }
+}

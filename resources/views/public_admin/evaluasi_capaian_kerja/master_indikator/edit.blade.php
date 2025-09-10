@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="tabbable">
+            <ul class="nav nav-tabs nav-tabs-highlight">
+                <li class="active">
+                    <a href="#tab_verifikasi" data-toggle="tab" aria-expanded="false">
+                        Ubah Sosial Media
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_verifikasi">
+                    <form id="formTambahMasterRS" method="post" action="{{ route('simpan_indikator_evaluasi_ubah',$id) }}" class="form-horizontal" enctype="multipart/form-data" >
+                        <div class="modal-body">
+                            <div class="form-group">
+                                {{ csrf_field() }}
+                            </div>
+                            <div class="form-group admin_bagian">
+                                <label for="admin_bagian" style="text-align: right;" class="col-lg-3 control-label">
+                                    Bidang : 
+                                </label>
+                                <div class="col-lg-8"> 
+                                    <label class="form-control">{{$kegiatan_evaluasi->program->bidang->nama_bidang}}</label>
+                                    <input type="hidden" name="id_bidang" id="id_bidang" value="{{$kegiatan_evaluasi->program->bidang->id}}">
+                                </div>
+                            </div>  
+                            <div class="form-group">
+                                <label for="nama" style="text-align: right;" class="col-lg-3 control-label">
+                                    Program :
+                                </label>
+                                <div class="col-lg-8">
+                                    <label class="form-control">{{$kegiatan_evaluasi->program->uraian}}</label>
+                                    <input type="hidden" name="id_program" id="id_program" value="{{$kegiatan_evaluasi->program->id}}">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <label for="nama" style="text-align: right;" class="col-lg-3 control-label">
+                                    Kegiatan :
+                                </label>
+                                <div class="col-lg-8">
+                                    <label class="form-control">{{$kegiatan_evaluasi->uraian}}</label>
+                                    <input type="hidden" name="id_kegiatan" id="id_kegiatan" value="{{$kegiatan_evaluasi->id}}">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <label for="nama" style="text-align: right;" class="col-lg-3 control-label">
+                                    Indikator :
+                                </label>
+                                <div class="col-lg-8">
+                                    <input type="text" value="{{$indikator_evaluasi->uraian}}" class="form-control" name="uraian" id="uraian" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nama" style="text-align: right;" class="col-lg-3 control-label">
+                                    Target :
+                                </label>
+                                <div class="col-lg-8">
+                                    <input type="text" value="{{$indikator_evaluasi->target}}" class="form-control" name="target" id="target" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="icon-cross"></i> Batal</button>
+                            <button type="submit" class="btn btn-primary"><i class="icon-check"></i> Simpan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,11 @@
+.afu-social {
+    width: 100%;
+
+    @include md {
+        width: auto;
+    }
+
+    @include xl {}
+
+    @include xxl {}
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$warna1: #3F91A7;
+$warna2: #F1C85E;
+$warna3: #253A79;
+$warna4: #41c0ff;
+$warna5: #838FBB;
+$warna6: #fbc544;
+$white: hsl(0, 0%, 95%);
+$black: hsl(0, 0%, 20%);
+$text-white: hsl(0, 0%, 97%);
+$text-black: hsl(0, 0%, 40%);
+$colors: (
+    /*White*/
+    white: $white,
+    white-dark: darken($white, 10%),
+    white-darker: darken($white, 20%),
+    white-darkest: darken($white, 30%),
+    white-light: lighten($white, 10%),
+    white-lighter: lighten($white, 20%),
+    white-lightest: lighten($white, 30%),
+    /*Dark*/
+    black: $black,
+    black-light: lighten($black, 10%),
+    black-lighter: lighten($black, 20%),
+    black-lightest: lighten($black, 30%),
+    black-dark: darken($black, 10%),
+    black-darker: darken($black, 20%),
+    black-darkest: darken($black, 30%),
+    /*Warna satu*/
+    satu: $warna1,
+    satu-light: lighten($warna1, 10%),
+    satu-lighter: lighten($warna1, 20%),
+    satu-lightest: lighten($warna1, 30%),
+    satu-shine: lighten($warna1, 40%),
+    satu-dark: darken($warna1, 10%),
+    satu-darker: darken($warna1, 20%),
+    satu-darkest: darken($warna1, 30%),
+    /*Warna Dua*/
+    dua: $warna2,
+    dua-light: lighten($warna2, 10%),
+    dua-lighter: lighten($warna2, 20%),
+    dua-lightest: lighten($warna2, 30%),
+    dua-dark: darken($warna2, 10%),
+    dua-darker: darken($warna2, 20%),
+    dua-darkest: darken($warna2, 30%),
+    /*Warna Tiga*/
+    tiga: $warna3,
+    tiga-light: lighten($warna3, 10%),
+    tiga-lighter: lighten($warna3, 20%),
+    tiga-lightest: lighten($warna3, 30%),
+    tiga-dark: darken($warna3, 10%),
+    tiga-darker: darken($warna3, 20%),
+    tiga-darkest: darken($warna3, 30%),
+    /*Warna Empat*/
+    empat: $warna4,
+    empat-light: lighten($warna4, 10%),
+    empat-lighter: lighten($warna4, 20%),
+    empat-lightest: lighten($warna4, 30%),
+    empat-dark: darken($warna4, 10%),
+    empat-darker: darken($warna4, 20%),
+    empat-darkest: darken($warna4, 30%),
+    /*Warna Lima*/
+    lima: $warna5,
+    lima-light: lighten($warna5, 10%),
+    lima-lighter: lighten($warna5, 20%),
+    lima-lightest: lighten($warna5, 30%),
+    lima-dark: darken($warna5, 10%),
+    lima-darker: darken($warna5, 20%),
+    lima-darkest: darken($warna5, 30%),
+    /*Warna Enam*/
+    enam: $warna6,
+    enam-light: lighten($warna5, 10%),
+    enam-lighter: lighten($warna5, 20%),
+    enam-lightest: lighten($warna5, 30%),
+    enam-dark: darken($warna5, 10%),
+    enam-darker: darken($warna5, 20%),
+    enam-darkest: darken($warna5, 30%),
+    /*Grey*/
+    grey: #b0a8b9,
+    grey-light: lighten(#b0a8b9, 10%),
+    grey-lighter: lighten(#b0a8b9, 20%),
+    grey-lightest: lighten(#b0a8b9, 40%),
+    grey-lightestt: lighten(#b0a8b9, 70%),
+    grey-dark: darken(#b0a8b9, 10%),
+    grey-darker: darken(#b0a8b9, 20%),
+    grey-darkest: darken(#b0a8b9, 40%),
+    grey-darkestt: darken(#b0a8b9, 70%),
+    /*Danger*/
+    danger: #d0120f,
+    danger-light: lighten(#d0120f, 10%),
+    danger-lighter: lighten(#d0120f, 20%),
+    danger-lightest: lighten(#d0120f, 30%),
+    /*Alert*/
+    alert: #ffc451,
+    alert-light: lighten(#ffc451, 10%),
+    alert-lighter: lighten(#ffc451, 20%),
+    alert-lightest: lighten(#ffc451, 30%),
+    /*Teks*/
+    text-dark: $text-black,
+    text-light: $text-white);
+
+/*Media Breakpoints*/
+$xxl: 1400px; // is media breakpoint xxl
+$xl: 1200px; // is media breakpoint xl
+$lg: 992px; // is media breakpoint lg
+$md: 768px; // is media breakpoint md
+$sm: 576px; // is media breakpoint sm
+/*Transisi*/
+$transition: 250ms ease-in-out;
+$transition-fast: 200ms ease-in-out;
+$transition-slow: 400ms ease-in-out;
+$transition-slower: 550ms ease-in-out;
+$transition-slowest: 1000ms ease-in-out;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// .fluid {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .transparent {
+//   opacity: 0;
+//   transition: $transition;
+
+//   &:hover {
+//     opacity: 1;
+//   }
+// }

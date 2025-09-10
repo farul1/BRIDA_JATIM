@@ -1,0 +1,281 @@
+.container-section {
+    background-color: rgb(249, 249, 252);
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 2vh 5.555555555555556% 2vh 5.555555555555556%;
+    width: 100%;
+
+    @include md {}
+
+    @include xl {
+        margin: 0 0 0 0;
+    }
+
+    @include xxl {}
+
+    .header {
+        @include flex-row;
+        align-items: center;
+        background-color: color(satu);
+        border-radius: 10px 10px 0 0;
+        justify-content: space-between;
+        padding: 10px 4.6875%;
+
+        @include md {}
+
+        @include xl {}
+
+        @include xxl {}
+
+        .judul {
+            color: color(text-light);
+            font-size: calc(0.6875rem + 1vw);
+            margin: 0 0 0 0;
+            max-width: 45%;
+
+            @include md {}
+
+            @include xl {}
+
+            @include xxl {}
+        }
+
+        .button-link {
+            @include flex-row;
+            align-items: center;
+            background-color: color(white-lighter);
+            border-radius: 10px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 10px;
+            max-width: 45%;
+
+            @include md {}
+
+            @include xl {}
+
+            @include xxl {}
+
+            .icon {
+                margin-right: 5px;
+                max-height: 30px;
+
+            }
+
+            .caption {
+                font-size: calc(.7rem + .5vw);
+                margin: 0;
+            }
+        }
+    }
+
+    .kotak {
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        margin: 0;
+        min-height: 85vh;
+        padding: 20px 4.6875% 10px 4.6875%;
+        filter: drop-shadow(0 0 4px color(white-dark));
+
+        @include md {}
+
+        @include xl {
+            padding: 45px 4.6875% 10px 4.6875%;
+        }
+
+        @include xxl {}
+
+        &.ada-header {
+            border-radius: 0 0 10px 10px;
+        }
+
+        &.ada-sidebar {
+            @include flex-column;
+            padding: 0 1.6875%;
+
+            @include md {}
+
+            @include xl {
+                flex-direction: row;
+            }
+
+            @include xxl {}
+        }
+
+        .search {
+            margin: 0 0 20px 0;
+            width: 100%;
+
+            @include md {}
+
+            @include xl {}
+
+            @include xxl {}
+        }
+
+        .judul {
+            @include font1;
+            color: color(black);
+
+            font: {
+                size: 18px;
+                weight: 500;
+            }
+
+            line-height: 1em;
+            margin: 0 0 0.5em 0;
+
+            @include md {
+                font-size: 20px;
+
+            }
+
+            @include xl {}
+
+            @include xxl {}
+
+            &.jarak.lebar {
+                margin: 0 0 1em 0;
+            }
+        }
+
+        .deskripsi {
+            @include font1;
+            color: color(text-dark);
+            font-size: 12px;
+
+            @include md {
+                font-size: 14px;
+            }
+
+            @include xl {
+                font-size: 16px;
+            }
+
+            @include xxl {
+                font-size: 18px;
+            }
+        }
+
+        .captcha {
+            img {
+                width: 75%;
+
+                @include md {
+                    width: 50%;
+                }
+
+                @include xl {
+                    width: 30%;
+                }
+
+                @include xxl {}
+            }
+        }
+
+        .sidebar {
+            @include flex-column;
+            align-items: center;
+            border-radius: 0 0 10px 10px;
+            box-sizing: border-box;
+            padding: 20px 0 0 0;
+            position: relative;
+
+            @include md {}
+
+            @include xl {
+                align-items: flex-start;
+                border-radius: 0 10px 10px 0;
+            }
+
+            @include xxl {}
+
+            &::after {
+                content: "";
+                box-shadow: 0 15px 15px #bfbfbf36;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 15px;
+
+
+                @include md {}
+
+                @include xl {
+                    left: auto;
+                    top: 0;
+                    box-shadow: 15px 0 15px #bfbfbf36;
+                    height: auto;
+                    width: 15px;
+                }
+
+                @include xxl {}
+            }
+
+            .link {
+                @include flex-row;
+                align-items: center;
+                border-radius: 5px;
+                box-sizing: border-box;
+                color: black;
+                margin: 0 0 10px 0;
+                padding: 10px;
+                position: relative;
+                text-decoration: none;
+                width: 90%;
+
+                @include md {}
+
+                @include xl {}
+
+                @include xxl {}
+
+                &.active {
+                    background-color: color(satu);
+                    color: color(text-light);
+
+                    &::after {
+                        @include md {}
+
+                        @include xl {
+                            content: "";
+                            background: color(satu);
+                            position: absolute;
+                            right: -10px;
+                            height: 25px;
+                            transform: rotate(45deg);
+                            width: 25px;
+                        }
+
+                        @include xxl {}
+                    }
+                }
+
+                .icon {
+                    margin-right: 10px;
+                    // width: 10%;
+
+                    @include md {}
+
+                    @include xl {
+                        // width: 15%;
+                    }
+
+                    @include xxl {}
+                }
+
+                .teks {
+                    font-size: calc(.7rem + .5vw);
+                    margin: 0;
+                }
+            }
+        }
+
+        .content {
+            padding: 20px 0 0 3%;
+        }
+    }
+}

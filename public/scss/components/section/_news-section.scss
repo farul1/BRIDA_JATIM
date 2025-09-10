@@ -1,0 +1,104 @@
+.news-section {
+    .gambar {
+        border-radius: 5px;
+        margin: 0 0 10px 0;
+        width: 100%;
+
+        @include md {
+            margin: 0 0 20px 0;
+        }
+
+        @include xl {
+            margin: 0 0 45px 0;
+        }
+
+        @include xxl {}
+    }
+
+    .line {
+        background-color: color(black);
+        height: 1px;
+        margin: 10px 0;
+        opacity: 0.3;
+        width: 100%;
+
+        &.mobile {
+            @include xl {
+                display: none;
+            }
+
+            @include xxl {
+                display: none;
+            }
+        }
+    }
+
+    .field-meta {
+        display: none;
+
+        @include md {}
+
+        @include xl {
+            @include flex-row;
+            align-items: center;
+            margin: 0 0 20px 0;
+        }
+
+        &.mobile {
+            @include flex-row;
+
+            @include md {}
+
+            @include xl {
+                display: none;
+            }
+
+            @include xxl {
+                display: none;
+            }
+        }
+
+        .category,
+        .author,
+        .date {
+            font-size: 11px;
+            margin: 0 5px;
+
+            @include md {}
+
+            @include xl {}
+
+            @include xxl {}
+        }
+
+        .category,
+        .author {
+            &::after {
+                content: "-";
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .judul {
+        @include md {}
+
+        @include xl {
+            font-size: 1.5rem;
+        }
+
+        @include xxl {
+            font-size: 1.625rem;
+        }
+    }
+
+    .deskripsi {
+        color: color(black-dark);
+
+        @include md {}
+
+        @include xl {}
+
+        @include xxl {}
+    }
+}

@@ -1,0 +1,93 @@
+.btnup {
+    @include flex-row;
+    align-items: center;
+    background-color: color(empat);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0 0 4px transparent);
+    justify-content: center;
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: $transition-slow;
+    position: fixed;
+    right: 7vw;
+    bottom: 5vh;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+
+    @include md {
+        right: 6vw;
+    }
+
+    @include xl {}
+
+    @include xxl {
+        right: 5vw;
+    }
+
+    &.active {
+        filter: drop-shadow(0 0 4px color(satu-dark));
+        opacity: 1;
+        transform: translate(0, 0);
+
+        &:hover,
+        &:focus-within {
+            filter: drop-shadow(0 0 4px color(white));
+
+            &::before {
+                border-right: 2px solid white;
+                height: 20px;
+
+                @include xl {
+                    border-right: 3px solid white;
+                }
+            }
+        }
+
+        &::after {
+            border-right: 2px solid white;
+            height: 20px;
+            transform: translate(0, 3px) rotate(-45deg);
+
+            @include xl {
+                border-right: 3px solid white;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        border-right: 2px solid transparent;
+        display: block;
+        height: 0;
+        transition: $transition-fast;
+        position: absolute;
+        width: 0;
+
+        @include xl {
+            border-right: 3px solid transparent;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        height: 0;
+        width: 20px;
+        border-top: 2px solid white;
+        border-right: 2px solid transparent;
+        transition: $transition-slow;
+        transform: translate(0, 3px) rotate(0);
+
+        @include md {}
+
+        @include xl {
+            border-top: 3px solid white;
+            border-right: 3px solid transparent;
+        }
+
+        @include xxl {}
+    }
+}
