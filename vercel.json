@@ -1,11 +1,11 @@
 {
   "version": 2,
   "functions": {
-    "public/index.php": { "runtime": "vercel-php@0.6.0" }
+    "api/index.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
-    { "src": "/(.*)", "dest": "/public/index.php" }
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ],
   "env": {
     "APP_NAME": "BRIDA",
@@ -42,26 +42,6 @@
     "MAIL_FROM_NAME": "BRIDA",
 
     "NOCAPTCHA_SITEKEY": "6LeEBcMrAAAAADkEak_hbLAZGwkgwfn2OfHE_DmU",
-    "NOCAPTCHA_SECRET": "6LeEBcMrAAAAAG_4dGrKLhtyZlZ-adPBe4Q2YiSL",
-
-    "AWS_ACCESS_KEY_ID": "",
-    "AWS_SECRET_ACCESS_KEY": "",
-    "AWS_DEFAULT_REGION": "us-east-1",
-    "AWS_BUCKET": "",
-    "AWS_USE_PATH_STYLE_ENDPOINT": "false",
-
-    "PUSHER_APP_ID": "",
-    "PUSHER_APP_KEY": "",
-    "PUSHER_APP_SECRET": "",
-    "PUSHER_HOST": "",
-    "PUSHER_PORT": "443",
-    "PUSHER_SCHEME": "https",
-    "PUSHER_APP_CLUSTER": "mt1",
-
-    "VITE_PUSHER_APP_KEY": "",
-    "VITE_PUSHER_HOST": "",
-    "VITE_PUSHER_PORT": "443",
-    "VITE_PUSHER_SCHEME": "https",
-    "VITE_PUSHER_APP_CLUSTER": "mt1"
+    "NOCAPTCHA_SECRET": "6LeEBcMrAAAAAG_4dGrKLhtyZlZ-adPBe4Q2YiSL"
   }
 }
