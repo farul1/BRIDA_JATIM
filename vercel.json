@@ -7,40 +7,31 @@
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ],
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public/build"
+      }
+    }
+  ],
   "env": {
     "APP_NAME": "BRIDA",
     "APP_ENV": "production",
     "APP_KEY": "base64:aHxi47mva5DMnvxoIGlVzkzYxANrNhPrEna7ODvHN2A=",
     "APP_DEBUG": "false",
     "APP_URL": "https://brida.jatimprov.go.id",
-
     "DB_CONNECTION": "mysql",
     "DB_HOST": "mysql-xyz123.psdb.io",
     "DB_PORT": "3306",
     "DB_DATABASE": "brida_jatim_db4",
     "DB_USERNAME": "brida_user",
     "DB_PASSWORD": "SuperSecret123",
-
-    "BROADCAST_DRIVER": "log",
-    "CACHE_DRIVER": "file",
-    "FILESYSTEM_DISK": "local",
-    "QUEUE_CONNECTION": "sync",
-    "SESSION_DRIVER": "file",
-    "SESSION_LIFETIME": "120",
-
-    "REDIS_HOST": "127.0.0.1",
-    "REDIS_PASSWORD": "",
-    "REDIS_PORT": "6379",
-
-    "MAIL_MAILER": "smtp",
-    "MAIL_HOST": "mailpit",
-    "MAIL_PORT": "1025",
-    "MAIL_USERNAME": "",
-    "MAIL_PASSWORD": "",
-    "MAIL_ENCRYPTION": "",
-    "MAIL_FROM_ADDRESS": "hello@example.com",
-    "MAIL_FROM_NAME": "BRIDA",
-
     "NOCAPTCHA_SITEKEY": "6LeEBcMrAAAAADkEak_hbLAZGwkgwfn2OfHE_DmU",
     "NOCAPTCHA_SECRET": "6LeEBcMrAAAAAG_4dGrKLhtyZlZ-adPBe4Q2YiSL"
   }
