@@ -220,7 +220,7 @@ Route::delete('/data-profilkategori/{id}', [ProfilKategoriController::class,"des
         // --- END DATA SLIDER ---
 
         // --- START DATA FOOTER ---
-        Route::get('/data_footer', [FooterController::class,"index"])->name('slider');
+        Route::get('/data_footer', [FooterController::class,"index"])->name('footer.slider');
         Route::post('simpanfooter', [FooterController::class,"store"])->name('simpanfooter');
 
 
@@ -314,7 +314,7 @@ Route::delete('/data-judul/{id}', [JudulController::class,"destroy"])->name('del
         // --- END MASTER JUDUL  ---
         // --- START MASTER SAKIP KATEGORI ---
         Route::get('/sakip_kategori', [SakipController::class, "index"])->name('sakip.index');
-        Route::get('/sakip_kategori/create', [SakipController::class, "create"])->name('sakip.create');
+        Route::get('/sakip_kategori/create', [SakipController::class, "create"])->name('sakip.kategori.create');
         Route::post('/sakip_kategori/store', [SakipController::class, "store"])->name('sakip.store');
         Route::get('/sakip_kategori/{id}/edit', [SakipController::class, "edit"])->name('sakip.edit');
         Route::put('/sakip_kategori/update/{id}', [SakipController::class, 'update'])->name('sakip.update');
@@ -324,7 +324,7 @@ Route::delete('/data-judul/{id}', [JudulController::class,"destroy"])->name('del
 
         // --- START DATA SAKIP ---
         Route::get('/sakip_data', [SakipDataController::class, "index"])->name('sakip');
-        Route::get('/sakip_data/create', [SakipDataController::class, "create"])->name('sakip.create');
+Route::get('/sakip_data/create', [SakipDataController::class, "create"])->name('sakip.data.create');
         Route::post('/sakip_data/store', [SakipDataController::class, "store"])->name('simpan_sakip_data');
         Route::get('/sakip_data/{id}/edit', [SakipDataController::class, "edit"])->name('simpan_sakip_data_edit');
         Route::post('/sakip_data/update/{id}', [SakipDataController::class, "update"])->name('simpan_sakip_data_ubah');
