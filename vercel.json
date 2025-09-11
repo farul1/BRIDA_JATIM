@@ -6,6 +6,8 @@
       "includeFiles": "public/**"
     }
   },
+  "buildCommand": "vite build",
+  "outputDirectory": "public/build",
   "routes": [
     { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
@@ -27,5 +29,6 @@
     "DB_PASSWORD": "58850762dca4a893c6c22ebebd3a848f9db0acbf",
     "NOCAPTCHA_SITEKEY": "6LeEBcMrAAAAADkEak_hbLAZGwkgwfn2OfHE_DmU",
     "NOCAPTCHA_SECRET": "6LeEBcMrAAAAAG_4dGrKLhtyZlZ-adPBe4Q2YiSL"
-  }
+  },
+  "public": true
 }
